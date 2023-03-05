@@ -1,0 +1,40 @@
+<!-- index.wxml -->
+<view class="container">
+<view class="dialog-list">
+    <!-- 对话列表 -->
+    <scroll-view scroll-y >
+      <view wx:for="{{dialogList}}" wx:key="{{index}}" class="dialog-item">
+          <view wx:if="{{item.type == 'mine'}}" class="mine">
+            <image class="img-talk" src="/images/user.jpg"></image>
+            <text selectable="true">{{item.content}}</text>
+            <image class="img-talk"></image>
+          </view>
+        <block class="dialog-container">
+          <view wx:if="{{item.type == 'other'}}" class="other">
+            <image class="img-talk"></image>
+            <text selectable="true">{{item.content}}</text>
+            <image class="img-talk"  src="/images/bot.jpg"></image>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+</view>
+
+  <!-- 输入框和发送按钮 -->
+  <!-- <view class="input-box" style="white-space:pre-wrap">
+      <input type="text" class="input-msg" value="{{inputMsg}}" bindinput="onInputMsgChange"></input>
+      <button class="send-btn" bindtap="onSendBtnClick">发送</button>
+  </view> -->
+  <view class="input-box" >
+    <scroll-view scroll-y >
+      <textarea 
+        class="input-msg" 
+        placeholder="请输入代码" 
+        auto-height="true" 
+        maxlength="-1"
+        value="{{inputMsg}}" 
+        bindinput = "onInputMsgChange" ></textarea>
+      </scroll-view>
+      <button class="send-btn" bindtap="onSendBtnClick">发送</button>
+  </view>
+</view>

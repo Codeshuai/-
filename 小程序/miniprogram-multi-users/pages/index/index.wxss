@@ -1,0 +1,75 @@
+.dialog-list{
+  /* background-color: red; */
+  margin-bottom: 200px;
+}
+
+.mine{
+  display: flex;
+  margin-top: 40rpx;
+  align-items: center;
+}
+.mine text{
+  background-color: #56ee56;
+  flex: 1;
+  margin-left: 10rpx;
+  padding: 15rpx 15rpx;
+  border-radius: 11rpx;
+  /* word-break: break-all; */
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
+}
+
+.other{
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.other text{
+  /* background-color: #a59dd1; */
+  flex: 1;
+  margin-right: 10rpx;
+  padding: 15rpx 15rpx;
+  background-color: #f7f3f3;
+  border-radius: 11rpx;
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
+}
+
+.img-talk {
+  height: 80rpx;
+  width:  80rpx;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: row;
+  height: 70rpx;
+  margin-top: 100rpx;
+  position: fixed;
+  bottom: 4%;
+  left: 2%;
+  width: 95%;
+  /* background: #000; */
+}
+
+.input-msg {
+  border: 5rpx solid rgb(204, 204, 204);
+  border-radius: 10rpx;
+  margin-right: 10rpx;
+  background-color: rgb(248, 245, 245); 
+  font-size: 45rpx;
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
+}
+
+.send-btn {
+  height: 70rpx; 
+  width: 20% !important;
+  padding: 10rpx 10rpx;
+  border-radius: 5px; 
+  color: #fff;
+  background-color: rgb(23, 224, 107); 
+}
