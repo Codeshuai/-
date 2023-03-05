@@ -1,0 +1,1 @@
+[{"id": 0.5926098489936169, "code": "hello", "choice": ""}, {"id": 0.1530221975470556, "code": "", "choice": ""}, {"id": "U04NJM82VD3", "code": "def send():\n    query = request.get_json()\n    answer = Answer(query)\n    #answer是json文件\n    return answer", "choice": "2"}]
